@@ -1,0 +1,447 @@
+// MIT License
+//
+// Copyright (c) 2019 Groupe PSA
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
+@import 'variables';
+
+html {
+
+  // Buttons
+  // --------------------------------------------------
+
+  .btn {
+    color: @white;
+    border-radius: 2px;
+    &:hover {
+      color: @white;
+    }
+
+    &-default {
+      border-color: @medium-grey;
+      color: @dark-grey;
+      &:hover {
+        color: @anthracite;
+      }
+    }
+
+    &-link {
+      color: @medium-steel-blue;
+      &:hover {
+        color: @steel-blue;
+      }
+    }
+
+    &-primary {
+      background-color: @medium-steel-blue;
+      &:hover {
+        background-color: @steel-blue;
+      }
+    }
+
+    &-danger {
+      background-color: @medium-strawberry;
+      &:hover {
+        background-color: @strawberry;
+      }
+    }
+
+    &-warning {
+      background-color: @medium-apricot;
+      &:hover {
+        background-color: @apricot;
+      }
+    }
+
+    &-info {
+      background-color: @medium-turquoise;
+      &:hover {
+        background-color: @turquoise;
+      }
+    }
+
+    &-success {
+      background-color: @medium-pea-green;
+      &:hover {
+        background-color: @pea-green;
+      }
+    }
+
+    &-action {
+      background-color: @medium-cobalt-blue;
+      &:hover {
+        background-color: @cobalt-blue;
+      }
+    }
+
+    &-flashy {
+      background-color: @medium-blueberry;
+      &:hover {
+        background-color: @blueberry;
+      }
+    }
+
+    &-file {
+      position: relative;
+      overflow: hidden;
+      input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+      }
+    }
+  }
+
+  // Input
+  // --------------------------------------------------
+
+  input {
+    border-color: @medium-grey;
+    border-radius: 2px;
+  }
+
+  // Select
+  // --------------------------------------------------
+
+  select {
+    border-color: @medium-grey;
+    border-radius: 2px;
+  }
+
+  // Pagination
+  // --------------------------------------------------
+
+  .pagination > li:last-child > a, .pagination > li:last-child > span,
+  .pagination > li:first-child > a, .pagination > li:first-child > span {
+    border-radius: 2px;
+  }
+
+  ul.pagination li a {
+    border-color: @medium-grey;
+  }
+
+  // Dropdown
+  // --------------------------------------------------
+
+  .dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+    background-color: @medium-steel-blue;
+    color: @white;
+  }
+
+  // Alert
+  // --------------------------------------------------
+
+  .alert {
+    border: none;
+    border-radius: 0;
+    border-left: 5px solid;
+
+    &-info {
+      border-color: @medium-steel-blue;
+      background-color: @ultra-light-steel-blue;
+      h1, h2, h3, H4, h6 {
+        color: @steel-blue;
+      }
+    }
+    &-success {
+      border-color: @medium-pea-green;
+      background-color: @ultra-light-pea-green;
+      h1, h2, h3, H4, h6 {
+        color: @pea-green;
+      }
+    }
+    &-warning {
+      border-color: @medium-apricot;
+      background-color: @ultra-light-apricot;
+      h1, h2, h3, H4, h6 {
+        color: @apricot;
+      }
+    }
+    &-danger {
+      border-color: @medium-strawberry;
+      background-color: @ultra-light-strawberry;
+      h1, h2, h3, H4, h6 {
+        color: @strawberry;
+      }
+    }
+  }
+
+  // Labels and badges
+  // --------------------------------------------------
+
+  .label {
+    border-radius: 2px;
+    font-size: 70%;
+    font-weight: normal;
+
+    &-flashy {
+      background-color: @medium-blueberry;
+      color: @white;
+    }
+
+    &-info {
+      background-color: @light-steel-blue;
+      &-pale {
+        background-color: @pale-steel-blue;
+        color: @dark-grey;
+      }
+    }
+
+    &-success {
+      background-color: @medium-pea-green;
+      &-pale {
+        background-color: @pale-pea-green;
+        color: @dark-grey;
+      }
+    }
+
+    &-warning {
+      background-color: @medium-apricot;
+      &-pale {
+        background-color: @pale-apricot;
+        color: @dark-grey;
+      }
+    }
+
+    &-danger {
+      background-color: @medium-strawberry;
+      &-pale {
+        background-color: @pale-strawberry;
+        color: @dark-grey;
+      }
+    }
+  }
+
+  // Panel
+  // --------------------------------------------------
+
+  .panel {
+    border-radius: 2px;
+
+    &-heading {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &-primary {
+      border-color: @light-steel-blue;
+      & > .panel-heading {
+        background-color: @light-steel-blue;
+        color: @white;
+        border: none;
+      }
+    }
+
+    &-info {
+      border-color: @light-steel-blue;
+      & > .panel-heading {
+        background-color: @light-steel-blue;
+        color: @white;
+        border: none;
+      }
+    }
+
+    &-success {
+      border-color: @medium-pea-green;
+      & > .panel-heading {
+        background-color: @medium-pea-green;
+        color: @white;
+        border: none;
+      }
+    }
+
+    &-warning {
+      border-color: @medium-apricot;
+      & > .panel-heading {
+        background-color: @medium-apricot;
+        color: @white;
+        border: none;
+      }
+    }
+
+    &-danger {
+      border-color: @medium-strawberry;
+      & > .panel-heading {
+        background-color: @medium-strawberry;
+        color: @white;
+        border: none;
+      }
+    }
+  }
+
+  // Modal
+  // --------------------------------------------------
+
+  .modal-header {
+    font-family: @main-font;
+    color: @dark-grey;
+    background-color: @snow-white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid @pale-grey;
+  }
+
+  .modal-footer {
+    font-family: @main-font;
+    color: @dark-grey;
+    background-color: @snow-white;
+    border-top: 1px solid @pale-grey;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  // Infobox
+  // --------------------------------------------------
+
+  // Base styles (regardless of theme)
+  .callout {
+    color: @white !important;
+    font-size: 18px;
+    font-weight: 400;
+    .border-radius(3px);
+    margin: 0 0 20px 0;
+    padding: 15px 30px 15px 15px;
+    border-left: 5px solid #eee;
+    a {
+      color: #fff;
+      font-size: 18px;
+      text-decoration: underline;
+      &:hover {
+        color: #eee;
+      }
+    }
+    h1, h2, h3, h4, h5 {
+      margin-top: 0;
+      font-weight: 600;
+      color: @white !important;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    code,
+    .highlight {
+      background-color: #fff;
+    }
+
+    // Themes for different contexts
+    &.callout-danger {
+      &:extend(.bg-red);
+      border-color: darken(@red, 10%);
+    }
+    &.callout-warning {
+      &:extend(.bg-yellow);
+      border-color: darken(@yellow, 10%);
+    }
+    &.callout-info {
+      &:extend(.bg-blue);
+      border-color: darken(@blue, 10%);
+    }
+    &.callout-success {
+      &:extend(.bg-green);
+      border-color: darken(@green, 10%);
+    }
+  }
+
+
+  // Infobox
+  // --------------------------------------------------
+  .border-radius(@radius) {
+    border-radius: @radius;
+  }
+  .border-radius(@topleft; @topright; @bottomright; @bottomleft) {
+    border-radius: @topleft @topright @bottomright @bottomleft;
+  }
+  .info-box {
+    display: block;
+    min-height: 90px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);;
+    margin-bottom: 15px;
+    small {
+      font-size: 14px;
+    }
+    .progress {
+      background: rgba(0, 0, 0, .2);
+      margin: 5px -10px 5px -10px;
+      height: 2px;
+      &,
+      & .progress-bar {
+        .border-radius(0);
+      }
+      .progress-bar {
+        background: #fff;
+      }
+    }
+  }
+  .info-box-icon {
+    .border-radius(2px; 0; 2px; 0);
+    display: block;
+    float: left;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 90px;
+    background: rgba(0, 0, 0, 0.2);
+    > img {
+      max-width: 100%;
+    }
+  }
+  .info-box-content {
+    padding: 5px 10px;
+    margin-left: 90px;
+  }
+  .info-box-number {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .progress-description,
+  .info-box-text {
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .info-box-text {
+    text-transform: uppercase;
+  }
+  .info-box-more {
+    display: block;
+  }
+
+  .progress-description {
+    margin: 0;
+  }
+
+}
+

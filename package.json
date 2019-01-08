@@ -1,0 +1,35 @@
+{
+  "name": "psa-business-theme",
+  "version": "1.0.0",
+  "description": "W20 Business Theme",
+  "license": "MIT",
+  "keywords": [
+    "psa",
+    "business",
+    "theme"
+  ],
+  "bugs": {
+    "url": "https://github.com/GroupePSA/psa-business-theme/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-less": "~1.0.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-cssmin": "~3.0.0"
+  },
+  "scripts": {
+    "prepare": "grunt",
+    "test": "echo sorry, no test to run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GroupePSA/psa-business-theme.git"
+  },
+  "author": "Groupe PSA",
+  "contributors": [
+    "Adrien LAUER <adrien.lauer@mpsa.com>",
+    "Kavi RAMYEAD <kavi.ramyead@ext.mpsa.com>",
+    "Jose Manuel MARTINEZ LAINEZ <josemanuel.martinez1@ext.mpsa.com>"
+  ]
+}
