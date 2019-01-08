@@ -1,3 +1,7 @@
+# Version 1.0.2 (2019-01-08)
+
+* [new] Add PSA logo source file for topbar usage.
+
 # Version 1.0.1 (2019-01-08)
 
 * [fix] Fix font family attribute.
