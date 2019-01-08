@@ -279,20 +279,20 @@ html .callout.callout-info {
   background-color: #f1ecf5 !important;
 }
 @font-face {
-  font-family: 'Collator', sans-serif;
+  font-family: 'Collator';
   src: url('fonts/collator/Collator-webfont.eot');
   src: url('fonts/collator/Collator-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/collator/Collator-webfont.woff2') format('woff2'), url('fonts/collator/Collator-webfont.woff') format('woff'), url('fonts/collator/Collator-webfont.ttf') format('truetype'), url('fonts/collator/Collator-webfont.svg#collatorregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Arimo', sans-serif;
+  font-family: 'Arimo';
   src: url('fonts/arimo/Arimo-Regular.woff2') format('woff2'), url('fonts/arimo/Arimo-Regular.woff') format('woff'), url('fonts/arimo/Arimo-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 .bt-title {
-  font-family: 'Collator', sans-serif, arial, helvetica, sans-serif;
+  font-family: 'Collator', sans-serif;
 }
 .bt-title--page {
   font-size: 24px;
@@ -300,18 +300,18 @@ html .callout.callout-info {
   color: #666666;
 }
 .bt-text {
-  font-family: 'Arimo', sans-serif, arial, helvetica, sans-serif;
+  font-family: 'Arimo', sans-serif;
 }
 .bt-text--main {
   font-size: 14px;
   color: #666666;
 }
 .bt-text--title {
-  font-family: 'Collator', sans-serif, arial, helvetica, sans-serif;
+  font-family: 'Collator', sans-serif;
   font-size: 26px;
 }
 .bt-text--env {
-  font-family: 'Arimo', sans-serif, arial, helvetica, sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size: 18px;
 }
 .bt-text--subtitle {
@@ -344,7 +344,7 @@ html {
   text-rendering: optimizeLegibility;
 }
 .bt-content {
-  font-family: 'Arimo', sans-serif, arial, helvetica, sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size: 14px;
   color: #666666;
 }
@@ -353,7 +353,7 @@ html {
 .bt-content h3,
 .bt-content h4,
 .bt-content h5 {
-  font-family: 'Collator', sans-serif, arial, helvetica, sans-serif;
+  font-family: 'Collator', sans-serif;
   padding-bottom: 9px;
 }
 .bt-content h1 {
@@ -381,7 +381,7 @@ html {
   color: #999999;
 }
 .bt-content .page-header {
-  font-family: 'Collator', sans-serif, arial, helvetica, sans-serif;
+  font-family: 'Collator', sans-serif;
   font-size: 24px;
   font-weight: bold;
   color: #666666;
@@ -791,15 +791,15 @@ html .progress-description {
   text-overflow: ellipsis;
 }
 .bt-topbar .bt-brand .bt-brand-title {
-  font-family: 'Collator', sans-serif, arial, helvetica, sans-serif;
+  font-family: 'Collator', sans-serif;
   font-size: 26px;
 }
 .bt-topbar .bt-brand .bt-brand-env {
-  font-family: 'Arimo', sans-serif, arial, helvetica, sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size: 18px;
 }
 .bt-topbar .bt-brand .bt-brand-description {
-  font-family: 'Arimo', sans-serif, arial, helvetica, sans-serif;
+  font-family: 'Arimo', sans-serif;
   font-size: 18px;
 }
 .bt-topbar .bt-sidemenu-toggler {

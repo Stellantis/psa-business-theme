@@ -23,22 +23,22 @@
 @import 'variables';
 
 @font-face {
-  font-family: @title-font;
-  src: url('fonts/collator/Collator-webfont.eot');
-  src: url('fonts/collator/Collator-webfont.eot?#iefix') format('embedded-opentype'),
-  url('fonts/collator/Collator-webfont.woff2') format('woff2'),
-  url('fonts/collator/Collator-webfont.woff') format('woff'),
-  url('fonts/collator/Collator-webfont.ttf') format('truetype'),
-  url('fonts/collator/Collator-webfont.svg#collatorregular') format('svg');
+  font-family: 'Collator';
+  src: url('./fonts/collator/Collator-webfont.eot');
+  src: url('./fonts/collator/Collator-webfont.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/collator/Collator-webfont.woff2') format('woff2'),
+  url('./fonts/collator/Collator-webfont.woff') format('woff'),
+  url('./fonts/collator/Collator-webfont.ttf') format('truetype'),
+  url('./fonts/collator/Collator-webfont.svg#collatorregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: @main-font;
-  src: url('fonts/arimo/Arimo-Regular.woff2') format('woff2'),
-  url('fonts/arimo/Arimo-Regular.woff') format('woff'),
-  url('fonts/arimo/Arimo-Regular.ttf') format('truetype');
+  font-family: 'Arimo';
+  src: url('./fonts/arimo/Arimo-Regular.woff2') format('woff2'),
+  url('./fonts/arimo/Arimo-Regular.woff') format('woff'),
+  url('./fonts/arimo/Arimo-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -50,7 +50,7 @@
 // --------------------------------------------------
 
 .bt-title {
-  font-family: @title-font, arial, helvetica, sans-serif;
+  font-family: @title-font;
 }
 
 .bt-title--page {
@@ -60,7 +60,7 @@
 }
 
 .bt-text {
-  font-family: @main-font, arial, helvetica, sans-serif;
+  font-family: @main-font;
 }
 
 .bt-text--main {

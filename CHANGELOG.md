@@ -1,6 +1,6 @@
 # Version 1.0.1 (2019-01-08)
 
-* [fix] Un-ignore produced CSS files from git.
+* [fix] Fix font family attribute.
 
 # Version 1.0.0 (2019-01-08)
 
