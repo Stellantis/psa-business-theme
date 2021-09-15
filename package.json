@@ -18,7 +18,7 @@
     "grunt-contrib-watch": "~1.1.0",
     "grunt-contrib-cssmin": "~3.0.0",
     "mixin-deep" : "^2.0.1",
-    "set-value": "^2.0.1"
+    "set-value": "^4.0.1"
   },
   "scripts": {
     "prepare": "grunt",
